@@ -1,69 +1,54 @@
+<!-- productos.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos - Recursos que inspiran</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/estilos.css">
+  <title>Productos - Recursos que inspiran</title>
 </head>
 <body>
   <header>
     <h1>Recursos que inspiran</h1>
   </header>
+
   <nav>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
+      <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="#" id="icono-carrito" class="carrito-icono">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="contador-carrito" class="contador-carrito">0</span>
+        </a>
+      </li>
       <li><a href="productos.html">Productos</a></li>
       <li><a href="reseñas.html">Reseñas</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
-  <main>
-    <section class="cards">
-      <div class="card">
-        <h3>Proyecto 1</h3>
-        <img src="./imgs/bloques.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 2</h3>
-        <img src="./imgs/lab_ciencias.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 3</h3>
-        <img src="./imgs/circuitos.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 4</h3>
-        <img src="./imgs/lab_ciencias.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 5</h3>
-        <img src="./imgs/bloques.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 6</h3>
-        <img src="./imgs/lab_ciencias.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 7</h3>
-        <img src="./imgs/bloques.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-      <div class="card">
-        <h3>Proyecto 8</h3>
-        <img src="./imgs/circuitos.jpg" alt="Plantilla 1" style="width:100%;">
-        <p>Plantillas editables para informática básica.</p>
-      </div>
-    </section>
-  </main>
+
+
+
+  <h2>Libros recomendados</h2>
+  <div id="libros-container" class="libros-container"></div>
+
   <footer>
     <p>&copy; 2025 Recursos que inspiran</p>
   </footer>
+
+  <div id="modal-carrito" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <h2>Tu Carrito</h2>
+      <div id="lista-carrito"></div>
+      <div id="total-carrito">Total: $0.00</div>
+      <div class="botones-carrito">
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="pagar">Pagar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/api_fetch.js"></script>
 </body>
 </html>
