@@ -252,3 +252,19 @@ a.comprar {
 a.comprar:hover {
   background-color: #0056b3;
 }
+
+.contador-carrito {
+  background-color: crimson;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  z-index: 10;
+}
