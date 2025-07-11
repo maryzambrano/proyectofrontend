@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p><strong>Autor:</strong> ${libro.author_name ? libro.author_name.join(", ") : "Desconocido"}</p>
                     <p><strong>Año:</strong> ${libro.first_publish_year ?? "N/D"}</p>
                     <p><strong>Precio:</strong> $${precio.toFixed(2)}</p>
+                    <a href="https://openlibrary.org${libro.key}" target="_blank">Ver más</a>
                     <button class="comprar" data-id="${idLibro}" onclick="agregarAlCarrito('${idLibro}')">Agregar al carrito</button>
                 `;
 
