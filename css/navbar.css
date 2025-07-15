@@ -1,0 +1,43 @@
+header, footer {
+  background: linear-gradient(to right, #800000, #6d28d9);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: #ddd;
+  margin: 0;
+  padding: 0.5rem;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.contador-carrito {
+  background-color: crimson;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  z-index: 10;
+}
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}

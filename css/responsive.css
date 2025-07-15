@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .formulario-contacto, .formulario-compra {
+    padding: 1rem;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  .modal-contenido {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  .item-carrito {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .botones-carrito {
+    flex-direction: column;
+  }
+  .botones-carrito button {
+    width: 100%;
+  }
+  .tabla-resumen table, .tabla-resumen thead, .tabla-resumen tbody, .tabla-resumen th, .tabla-resumen td, .tabla-resumen tr {
+    display: block;
+  }
+  .tabla-resumen td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .tabla-resumen td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .tabla-resumen th {
+    display: none;
+  }
+}
