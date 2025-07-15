@@ -1,8 +1,7 @@
-// api_fetch.js
 let productosDB = [];
 
 function mostrarNotificacion(mensaje, tipo = 'exito') {
-    alert(mensaje); // Simplificado para testeo
+    alert(mensaje); 
 }
 
 function actualizarContadorCarrito() {

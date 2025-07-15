@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Esta función se llamará desde el atributo onsubmit del formulario
+
 window.limpiarDespuesEnvio = function () {
   localStorage.removeItem("carrito");
   sessionStorage.clear();
